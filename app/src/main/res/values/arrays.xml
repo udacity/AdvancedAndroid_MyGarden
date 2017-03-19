@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Typed array resources are used to created a list of static data
+in this case, we can list the types of plants here and use string resources when displaying them
+to allow translation. Each item is indexed in the array based on its order starting from 0 -->
+
+<!-- To access this array in the code
+Resources res = getResources();
+TypedArray plantTypes = res.obtainTypedArray(R.array.plant_types);
+String type = plantTypes.getString(0); // this will return "vine"
+-->
+
+<!-- To add a new type simple insert a new item tag below then make sure you have added the following resources:
+ 1. A string resource in strings.xml with the display name for the new type and the key being the item value below
+ 2. An image resource for each of the 3 phases of the plant with each having a normal, danger and dead mode:
+    2.a. normal mode is simply the item name below followed by the age phase (e.g. cactus_1, cactus_2, etc..)
+    2.b. danger mode is the item name followed by "_danger" then the age phase (e.d. cactus_danger_1, etc..)
+    2.c. dead is the same as danger but with the suffix "_dead" then the age phase (e.d. cactus_dead_1, etc..)
+-->
+
+<resources>
+    <array name="plant_types">
+        <item>vine</item>
+        <item>cactus</item>
+    </array>
+</resources>
