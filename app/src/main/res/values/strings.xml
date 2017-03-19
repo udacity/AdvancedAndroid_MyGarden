@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyGarden</string>
+    <string name="vine">Vine</string>
+    <string name="cactus">Cactus</string>
+    <string name="extra">New plant</string>
+    <string name="title_activity_plant_detail">PlantDetail</string>
+    <string name="title_activity_my_garden">My Garden</string>
+    <string name="days">days</string>
+    <string name="hours">hrs</string>
+    <string name="minutes">mins</string>
+    <string name="title_activity_add_plant">Add Plant</string>
+    <string name="select_plant_type">Select a plant type</string>
+    <string name="unknown_type">Unknown</string>
+    <string name="since_planted">Since planted</string>
+    <string name="since_watered">Since watered</string>
+</resources>

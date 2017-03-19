@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.mygarden">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".provider.PlantContentProvider"
+            android:authorities="com.example.android.mygarden"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_my_garden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PlantDetailActivity"
+            android:label="@string/title_activity_plant_detail" />
+        <activity
+            android:name=".ui.AddPlantActivity"
+            android:label="@string/title_activity_add_plant" />
+    </application>
+
+</manifest>
