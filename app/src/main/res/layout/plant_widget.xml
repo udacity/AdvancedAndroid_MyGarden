@@ -21,6 +21,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- TODO (1): Add an ImageView that displays water_drop_blue to act as the watering button -->
+
     <ImageView
         android:id="@+id/widget_plant_image"
         android:layout_width="wrap_content"
