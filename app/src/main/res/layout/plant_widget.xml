@@ -43,7 +43,7 @@
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
-        android:textSize="32sp"
+        android:textSize="20sp"
         tools:text="123" />
 
 </LinearLayout>
