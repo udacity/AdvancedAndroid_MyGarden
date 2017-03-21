@@ -13,4 +13,5 @@
     <string name="unknown_type">Unknown</string>
     <string name="since_planted">Since planted</string>
     <string name="since_watered">Since watered</string>
+    <string name="empty_view_text">Garden is empty!</string>
 </resources>

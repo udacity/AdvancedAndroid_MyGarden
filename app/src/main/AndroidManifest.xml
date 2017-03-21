@@ -21,15 +21,9 @@
 
         <service android:name=".PlantWateringService" />
 
-        <!-- TODO (1): Create a new layout called widget_grid_view.xml that contains a GridView and
-        another fallback RelativeLayout for empty gardens -->
-
-        <!-- TODO (2): Create a RemoteViewsService class and a RemoteViewsFactory class with:
-                        - onDataSetChanged querying the list of all plants in the database
-                        - getViewAt creating a RemoteView using the plant_widget layout
-                        - getViewAt setting the fillInIntent for widget_plant_image with the plant ID as extras -->
-
-        <!-- TODO (3); Register the RemoteViewsService in the Manifest -->
+        <service
+            android:name=".GridWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <provider
             android:name=".provider.PlantContentProvider"
