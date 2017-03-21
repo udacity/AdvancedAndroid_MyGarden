@@ -9,17 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <receiver android:name=".PlantWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/plant_widget_info" />
+        </receiver>
+
         <provider
             android:name=".provider.PlantContentProvider"
             android:authorities="com.example.android.mygarden"
             android:exported="true" />
-
-        <!-- TODO (1): Create a plant_widget_info.xml file and set updatePeriodMillis to 30 minutes -->
-        <!-- TODO (2): Create a plant_widget.xml file that contains an ImageView defaulting to @drawable/grass -->
-        <!-- TODO (3): Create a PlantWidgetProvider class that extends AppWidgetProvider and
-                        set updateAppWidget to handle clicks and launch MainActivity -->
-        <!-- TODO (4): Add a reciever tag for PlantWidgetProvider and an intent-filter for APPWIDGET_UPDATE
-                        with meta data pointing to the plant_widget_info file -->
 
         <activity
             android:name=".ui.MainActivity"
