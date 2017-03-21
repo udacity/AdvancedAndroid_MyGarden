@@ -31,6 +31,8 @@ public class PlantWidgetProvider extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int imgRes, int appWidgetId) {
 
+        // TODO (3): Set the click handler to open the DetailActivity for plant ID,
+        // or the MainActivity if plant ID is invalid
         // Create an Intent to launch MainActivity when clicked
         Intent intent = new Intent(context, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
@@ -55,6 +57,8 @@ public class PlantWidgetProvider extends AppWidgetProvider {
         PlantWateringService.startActionUpdatePlantWidgets(context);
     }
 
+    // TODO (2): Modify updatePlantWidgets and updateAppWidget to pass the plant ID as well as a boolean
+    // to show/hide the water button
     public static void updatePlantWidgets(Context context, AppWidgetManager appWidgetManager,
                                           int imgRes, int[] appWidgetIds) {
         for (int appWidgetId : appWidgetIds) {
