@@ -36,6 +36,10 @@ import static com.example.android.mygarden.provider.PlantContract.PATH_PLANTS;
 public class PlantWateringService extends IntentService {
 
     public static final String ACTION_WATER_PLANTS = "com.example.android.mygarden.action.water_plants";
+    // TODO (3): Create a new action ACTION_UPDATE_PLANT_WIDGETS to handle updating widget UI and
+    // implement handleActionUpdatePlantWidgets to query the plant closest to dying and call
+    // updatePlantWidgets to refresh widgets
+
 
     public PlantWateringService() {
         super("PlantWateringService");
