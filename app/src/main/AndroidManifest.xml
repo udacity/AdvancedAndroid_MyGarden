@@ -18,7 +18,7 @@
         <!-- TODO (2): Create a plant_widget.xml file that contains an ImageView defaulting to @drawable/grass -->
         <!-- TODO (3): Create a PlantWidgetProvider class that extends AppWidgetProvider and
                         set updateAppWidget to handle clicks and launch MainActivity -->
-        <!-- TODO (4): Add a reciever tag for PlantWidgetProvider and an intent-filter for APPWIDGET_UPDATE
+        <!-- TODO (4): Add a receiver tag for PlantWidgetProvider and an intent-filter for APPWIDGET_UPDATE
                         with meta data pointing to the plant_widget_info file -->
 
         <activity
