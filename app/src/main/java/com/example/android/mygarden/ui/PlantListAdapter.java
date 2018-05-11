@@ -81,8 +81,11 @@ public class PlantListAdapter extends RecyclerView.Adapter<PlantListAdapter.Plan
         holder.plantImageView.setTag(plantId);
     }
 
-    public void swapCursor(Cursor newCursor) {
-        if (mCursor != null) {
+    public void swapCursor(Cursor newCursor)
+    {
+        Log.d(TAG, "swapCursor: cursor: "+newCursor.isClosed());
+        if (mCursor != null && mCursor != newCursor)
+        {
             mCursor.close();
         }
         mCursor = newCursor;
