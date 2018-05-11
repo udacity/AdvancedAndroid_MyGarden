@@ -83,7 +83,6 @@ public class PlantListAdapter extends RecyclerView.Adapter<PlantListAdapter.Plan
 
     public void swapCursor(Cursor newCursor)
     {
-        Log.d(TAG, "swapCursor: cursor: "+newCursor.isClosed());
         if (mCursor != null && mCursor != newCursor)
         {
             mCursor.close();
