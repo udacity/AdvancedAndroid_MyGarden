@@ -91,4 +91,10 @@ public class MainActivity
         Intent intent = new Intent(this, AddPlantActivity.class);
         startActivity(intent);
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        getSupportLoaderManager().restartLoader(GARDEN_LOADER_ID, null, this);
+    }
 }
