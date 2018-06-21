@@ -27,7 +27,7 @@ import com.example.android.mygarden.ui.MainActivity;
 
 public class PlantWidgetProvider extends AppWidgetProvider {
 
-    // TODO (1): Modify updateAppWidget method to take an image recourse and call
+    // TODO (1): Modify updateAppWidget method to take an image resource and call
     // setImageViewResource to update the widget’s image
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -50,7 +50,7 @@ public class PlantWidgetProvider extends AppWidgetProvider {
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-        // TODO (2): Move the updateAppWidget loop to a new method called updatePlantWidgets and pass through the image recourse
+        // TODO (2): Move the updateAppWidget loop to a new method called updatePlantWidgets and pass through the image resource
         // There may be multiple widgets active, so update all of them
         for (int appWidgetId : appWidgetIds) {
             updateAppWidget(context, appWidgetManager, appWidgetId);
