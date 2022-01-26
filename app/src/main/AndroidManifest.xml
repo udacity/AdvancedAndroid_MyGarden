@@ -9,7 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <receiver android:name=".PlantWidgetProvider">
+        <receiver android:name=".PlantWidgetProvider"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -32,7 +33,8 @@
 
         <activity
             android:name=".ui.MainActivity"
-            android:label="@string/title_activity_my_garden">
+            android:label="@string/title_activity_my_garden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
